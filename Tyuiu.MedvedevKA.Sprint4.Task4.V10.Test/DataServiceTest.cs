@@ -26,10 +26,7 @@ namespace Tyuiu.MedvedevKA.Sprint4.Task4.V10.Test
                            { 0, 2, 4, 0, 0},
                            { 0, 0, 2, 0, 0},
                            { 4, 2, 6, 0, 6} };
-
-
-
-
+            
             CollectionAssert.AreEqual(wait, res);
 
         }
