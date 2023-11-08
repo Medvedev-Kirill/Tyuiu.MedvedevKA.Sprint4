@@ -45,7 +45,7 @@ namespace Tyuiu.MedvedevKA.Sprint4.Task5.V4
             {
                 for (int j = 0; j < columns; j++)
                 {
-                    mtrx[i, j] = rnd.Next(-4, 7);
+                    mtrx[i, j] = rnd.Next(-4, 6);
                 }
             }
 
