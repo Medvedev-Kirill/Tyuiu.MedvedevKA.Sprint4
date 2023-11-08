@@ -12,7 +12,23 @@ namespace Tyuiu.MedvedevKA.Sprint4.Task5.V4.Lib
     {
         public int Calculate(int[,] matrix)
         {
-            throw new NotImplementedException();
+            int rows = matrix.GetUpperBound(0) + 1;
+            int columns = matrix.Length / rows;
+
+            int count = 0;
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    if (matrix[i, j] > 0) 
+                    {
+                        count++;
+                    }
+                       
+                }
+            }
+            return count;
         }
     }
 }
