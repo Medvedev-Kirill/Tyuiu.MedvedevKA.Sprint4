@@ -64,22 +64,13 @@ namespace Tyuiu.MedvedevKA.Sprint4.Task4.V10
                 }
                 Console.WriteLine();
             }
-            // Превращает нечётные числа в ноль
-            for (int i = 0; i < rows; i++)
-            {
-                for (int j = 0; j < columns; j++)
-                {
-                    if (mtrx[i, j] % 2 != 0)
-                    {
-                        mtrx[i, j] = 0;
-                    }
-                }
-            }
-            Console.WriteLine();
+           
             Console.WriteLine("****************************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                                           *");
             Console.WriteLine("****************************************************************************************");
             Console.WriteLine("Измененный массив:");
+            int[,] res = ds.Calculate(mtrx);
+
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
